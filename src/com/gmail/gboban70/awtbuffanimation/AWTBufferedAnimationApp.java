@@ -1,4 +1,4 @@
-package com.gmail.gboban70.awtanimation;
+package com.gmail.gboban70.awtbuffanimation;
 
 public class AWTBufferedAnimationApp {
 
