@@ -1,6 +1,7 @@
 package com.gmail.gboban70.awtanimation;
 
 import java.awt.Frame;
+import java.awt.Graphics;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -41,11 +42,9 @@ public abstract class AnimationFrame extends Frame {
 		return drawables;
 	}
 
-
 	public void setDrawables(Drawables drawables) {
 		this.drawables = drawables;
 	}
-
 
 	public Timer getTimer() {
 		return timer;
@@ -56,6 +55,17 @@ public abstract class AnimationFrame extends Frame {
 		this.timer = timer;
 	}
 	
-	public abstract void keyPressed(KeyEvent ke);
+	public void keyPressed(KeyEvent ke){
+		// do nothing
+		assert true;
+	}
 	
+	protected void update(){
+		this.drawables.updateAll();
+	}
+
+	@Override
+	public void paint(Graphics g){
+		this.drawables.drawAll(g);
+	}
 }
