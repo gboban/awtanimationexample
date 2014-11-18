@@ -1,5 +1,5 @@
 TODO:
-- add WindowAdapter for AnimationFrame
++ add WindowAdapter for AnimationFrame
 - add KeyAdapter for AnimationFrame
 - add Drawables (list of Drawable objects)
 - add protected update in frame to call update() on all Drawable objects in drawables
