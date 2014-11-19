@@ -5,4 +5,5 @@ TODO:
 + add protected update in frame to call update() on all Drawable objects in drawables
 + in AnimationFrame::paint(..) call update, call Drawable::draw(gc) on each drawable in drawables
 
++ add licenses
 - sample animation in AWTAnimationApp
