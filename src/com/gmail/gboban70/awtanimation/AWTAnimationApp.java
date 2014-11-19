@@ -6,5 +6,4 @@ public class AWTAnimationApp {
 		// TODO Auto-generated method stub
 
 	}
-
 }
