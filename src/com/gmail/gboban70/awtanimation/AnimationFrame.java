@@ -27,7 +27,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.util.Timer;
 
-public abstract class AnimationFrame extends Frame {
+public class AnimationFrame extends Frame {
 
 	/**
 	 * 
