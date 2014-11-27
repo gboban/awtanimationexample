@@ -24,6 +24,8 @@ import java.awt.Frame;
 import java.util.TimerTask;
 
 public class AnimationTimerTask extends TimerTask {
+	
+	long counter = 1L;
 	private Frame frame = null;
 	
 	public AnimationTimerTask(Frame anFrame){
@@ -31,8 +33,12 @@ public class AnimationTimerTask extends TimerTask {
 	}
 	
 	public void run() {
+
 		if(this.frame != null){
+			//System.out.println("Going to paint: " + this.frame);
 			this.frame.paint(this.frame.getGraphics());
 		}
+		
+		++counter;
 	}
 }

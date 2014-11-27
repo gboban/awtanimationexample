@@ -70,6 +70,8 @@ public class AWTAnimationApp {
 			if(i==0){
 				ke.setDrawable(d);
 			}
+			
+			drawables.getDrawables().add(d);
 		}
 		
 		this.af = new AnimationFrame();
@@ -84,6 +86,7 @@ public class AWTAnimationApp {
 	protected void run(){
 		// create form and run timers here
 		AnimationTimer timer = new AnimationTimer();
+		timer.setFrame(this.af);
 		this.af.setVisible(true);
 		timer.start();
 		
